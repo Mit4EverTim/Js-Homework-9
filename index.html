@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css";>
+    <title>Task Organizer</title>
+</head>
+<body>
+<div class="container py-4">
+
+  <h1 class="mb-4">Task Organizer</h1>
+  <p class="text-muted mb-4">I use it to sort and label my tasks!</p>
+
+
+    <div class="card    ">
+        <div class="cbody">
+            <h3>Top 5 COLORS</h3>
+            <button class="btn btn-primary mr-3" onclick="sortAZ()"> Sort Alphabeticaly</button>
+            <button class="btn btn-primary" onclick="sortZA()"> Sort Anti-alphabeticaly</button>
+
+            <div id="taskResult" class="box p-3 mt-3 rounded"></div>
+        </div>
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="cbody">
+            <h3>Time needed</h3>
+            <button class="btn btn-primary mr-3" onclick="sortShortest()"> Sort in ascending order</button>
+            <button class="btn btn-primary" onclick="sortHighest()"> Sort descending order</button>
+
+            <div id="timeResult" class="box p-3 mt-3 rounded"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="card mb-4">
+    <div class="cbody">
+      <h3>Label Every Task Time</h3>
+
+      <button class="btn btn-primary" onclick="addLabel()">Add Minutes Label</button>
+
+      <div id="labelResult" class="box p-3 mt-3 rounded"></div>
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html> 
